@@ -1,0 +1,14 @@
+{
+  "name": "vyshyvanka-server",
+  "version": "0.1.0",
+  "description": "Vyshyvynka server part",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "O. Miroshko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

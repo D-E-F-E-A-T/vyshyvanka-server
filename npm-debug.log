@@ -1,0 +1,613 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '--save', 'leveldb' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink /usr/bin/node
+5 warn package.json vyshyvanka-server@0.1.0 No repository field.
+6 warn package.json vyshyvanka-server@0.1.0 No README data
+7 silly cache add args [ 'leveldb', null ]
+8 verbose cache add spec leveldb
+9 silly cache add parsed spec { raw: 'leveldb',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'leveldb',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed leveldb@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'leveldb', range: '*', hasData: false }
+14 silly mapToRegistry name leveldb
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/leveldb
+18 verbose addNameRange registry:https://registry.npmjs.org/leveldb not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/leveldb
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 00:05:46
+22 verbose request id 9e7be29aeb87dc21
+23 http request GET https://registry.npmjs.org/leveldb
+24 http 200 https://registry.npmjs.org/leveldb
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"CFJL3MKEUS6FPFL1TV4GYN6R9"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=60',
+25 silly get     'content-length': '25523',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Mon, 01 Jun 2015 22:05:47 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '0',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-fra1225-FRA',
+25 silly get     'x-cache': 'MISS',
+25 silly get     'x-cache-hits': '0',
+25 silly get     'x-timer': 'S1433196347.114041,VS0,VE493',
+25 silly get     vary: 'Accept' } ]
+26 verbose get saving leveldb to /home/miroshko/.npm/registry.npmjs.org/leveldb/.cache.json
+27 silly addNameRange number 2 { name: 'leveldb', range: '*', hasData: true }
+28 silly addNameRange versions [ 'leveldb',
+28 silly addNameRange   [ '0.1.0',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.3.5',
+28 silly addNameRange     '0.4.0',
+28 silly addNameRange     '0.5.0',
+28 silly addNameRange     '0.5.1',
+28 silly addNameRange     '0.5.2',
+28 silly addNameRange     '0.5.3',
+28 silly addNameRange     '0.5.4',
+28 silly addNameRange     '0.5.5',
+28 silly addNameRange     '0.6.2',
+28 silly addNameRange     '0.6.3',
+28 silly addNameRange     '0.6.4',
+28 silly addNameRange     '0.7.0',
+28 silly addNameRange     '0.7.1' ] ]
+29 verbose addNamed leveldb@0.7.1
+30 silly addNamed semver.valid 0.7.1
+31 silly addNamed semver.validRange 0.7.1
+32 silly mapToRegistry name leveldb
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/leveldb
+36 verbose addRemoteTarball https://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz',
+37 verbose addRemoteTarball   'fee851362483e20f1bbb59e3c013d368fcea3dea' ]
+38 info retry fetch attempt 1 at 00:05:47
+39 info attempt registry request try #1 at 00:05:47
+40 http fetch GET https://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz
+41 http fetch 200 https://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz
+42 silly fetchAndShaCheck shasum fee851362483e20f1bbb59e3c013d368fcea3dea
+43 verbose addTmpTarball /tmp/npm-681-53be4d54/registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for leveldb@0.7.1
+45 silly cache afterAdd leveldb@0.7.1
+46 verbose afterAdd /home/miroshko/.npm/leveldb/0.7.1/package/package.json not in flight; writing
+47 verbose afterAdd /home/miroshko/.npm/leveldb/0.7.1/package/package.json written
+48 silly install resolved [ { name: 'leveldb',
+48 silly install resolved     keywords: [ 'database', 'leveldb' ],
+48 silly install resolved     description: 'Bindings for using LevelDB through node.',
+48 silly install resolved     homepage: 'https://github.com/my8bird/node-leveldb',
+48 silly install resolved     version: '0.7.1',
+48 silly install resolved     main: 'lib',
+48 silly install resolved     engines: { node: '>=0.6.13 <0.9.0' },
+48 silly install resolved     scripts:
+48 silly install resolved      { prepublish: 'make coffee',
+48 silly install resolved        preinstall: 'make build',
+48 silly install resolved        postinstall: 'make pkgclean',
+48 silly install resolved        test: 'make test' },
+48 silly install resolved     repository:
+48 silly install resolved      { type: 'git',
+48 silly install resolved        url: 'https://github.com/my8bird/node-leveldb.git' },
+48 silly install resolved     bugs: { url: 'https://github.com/my8bird/node-leveldb/issues' },
+48 silly install resolved     dependencies: {},
+48 silly install resolved     devDependencies: { 'coffee-script': '~1.3.0', mocha: '~1.3.0' },
+48 silly install resolved     contributors:
+48 silly install resolved      [ [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object],
+48 silly install resolved        [Object] ],
+48 silly install resolved     _id: 'leveldb@0.7.1',
+48 silly install resolved     dist:
+48 silly install resolved      { shasum: 'fee851362483e20f1bbb59e3c013d368fcea3dea',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz' },
+48 silly install resolved     maintainers: [ [Object] ],
+48 silly install resolved     directories: {},
+48 silly install resolved     _shasum: 'fee851362483e20f1bbb59e3c013d368fcea3dea',
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/leveldb/-/leveldb-0.7.1.tgz',
+48 silly install resolved     _from: 'leveldb@*' } ]
+49 info install leveldb@0.7.1 into /home/miroshko/projects/vyshyvanka-server
+50 info installOne leveldb@0.7.1
+51 verbose installOne of leveldb to /home/miroshko/projects/vyshyvanka-server not in flight; installing
+52 verbose lock using /home/miroshko/.npm/_locks/leveldb-bf817c087020bbbb.lock for /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+53 warn engine leveldb@0.7.1: wanted: {"node":">=0.6.13 <0.9.0"} (current: {"node":"0.12.2","npm":"2.7.4"})
+54 silly install write writing leveldb 0.7.1 to /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+55 silly cache addNamed cb leveldb@0.7.1
+56 verbose unbuild node_modules/leveldb
+57 silly gentlyRm /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb is being purged from base /home/miroshko/projects/vyshyvanka-server
+58 verbose gentlyRm don't care about contents; nuking /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+59 verbose tar unpack /home/miroshko/.npm/leveldb/0.7.1/package.tgz
+60 verbose tar unpacking to /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+61 silly gentlyRm /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb is being purged
+62 verbose gentlyRm don't care about contents; nuking /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+63 silly gunzTarPerm modes [ '775', '664' ]
+64 silly gunzTarPerm extractEntry package.json
+65 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+66 silly gunzTarPerm extractEntry .npmignore
+67 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+68 silly gunzTarPerm extractEntry README.md
+69 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+70 silly gunzTarPerm extractEntry LICENSE
+71 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+72 silly gunzTarPerm extractEntry wscript
+73 silly gunzTarPerm modified mode [ 'wscript', 420, 436 ]
+74 silly gunzTarPerm extractEntry Makefile
+75 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+76 silly gunzTarPerm extractEntry .travis.yml
+77 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+78 silly gunzTarPerm extractEntry binding.gyp
+79 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+80 silly gunzTarPerm extractEntry deps/leveldb/README
+81 silly gunzTarPerm modified mode [ 'deps/leveldb/README', 420, 436 ]
+82 silly gunzTarPerm extractEntry deps/leveldb/LICENSE
+83 silly gunzTarPerm modified mode [ 'deps/leveldb/LICENSE', 420, 436 ]
+84 silly gunzTarPerm extractEntry deps/leveldb/table/table_test.cc
+85 silly gunzTarPerm modified mode [ 'deps/leveldb/table/table_test.cc', 420, 436 ]
+86 silly gunzTarPerm extractEntry deps/leveldb/table/filter_block_test.cc
+87 silly gunzTarPerm modified mode [ 'deps/leveldb/table/filter_block_test.cc', 420, 436 ]
+88 silly gunzTarPerm extractEntry deps/leveldb/table/iterator_wrapper.h
+89 silly gunzTarPerm modified mode [ 'deps/leveldb/table/iterator_wrapper.h', 420, 436 ]
+90 silly gunzTarPerm extractEntry deps/leveldb/table/block_builder.h
+91 silly gunzTarPerm modified mode [ 'deps/leveldb/table/block_builder.h', 420, 436 ]
+92 silly gunzTarPerm extractEntry deps/leveldb/table/two_level_iterator.cc
+93 silly gunzTarPerm modified mode [ 'deps/leveldb/table/two_level_iterator.cc', 420, 436 ]
+94 silly gunzTarPerm extractEntry deps/leveldb/table/table.cc
+95 silly gunzTarPerm modified mode [ 'deps/leveldb/table/table.cc', 420, 436 ]
+96 silly gunzTarPerm extractEntry deps/leveldb/table/format.h
+97 silly gunzTarPerm modified mode [ 'deps/leveldb/table/format.h', 420, 436 ]
+98 silly gunzTarPerm extractEntry deps/leveldb/table/iterator.cc
+99 silly gunzTarPerm modified mode [ 'deps/leveldb/table/iterator.cc', 420, 436 ]
+100 silly gunzTarPerm extractEntry deps/leveldb/table/format.cc
+101 silly gunzTarPerm modified mode [ 'deps/leveldb/table/format.cc', 420, 436 ]
+102 silly gunzTarPerm extractEntry deps/leveldb/table/merger.h
+103 silly gunzTarPerm modified mode [ 'deps/leveldb/table/merger.h', 420, 436 ]
+104 silly gunzTarPerm extractEntry deps/leveldb/table/merger.cc
+105 silly gunzTarPerm modified mode [ 'deps/leveldb/table/merger.cc', 420, 436 ]
+106 silly gunzTarPerm extractEntry deps/leveldb/table/filter_block.cc
+107 silly gunzTarPerm modified mode [ 'deps/leveldb/table/filter_block.cc', 420, 436 ]
+108 silly gunzTarPerm extractEntry deps/leveldb/table/filter_block.h
+109 silly gunzTarPerm modified mode [ 'deps/leveldb/table/filter_block.h', 420, 436 ]
+110 silly gunzTarPerm extractEntry deps/leveldb/table/block.cc
+111 silly gunzTarPerm modified mode [ 'deps/leveldb/table/block.cc', 420, 436 ]
+112 silly gunzTarPerm extractEntry deps/leveldb/table/block.h
+113 silly gunzTarPerm modified mode [ 'deps/leveldb/table/block.h', 420, 436 ]
+114 silly gunzTarPerm extractEntry deps/leveldb/table/table_builder.cc
+115 silly gunzTarPerm modified mode [ 'deps/leveldb/table/table_builder.cc', 420, 436 ]
+116 silly gunzTarPerm extractEntry deps/leveldb/table/block_builder.cc
+117 silly gunzTarPerm modified mode [ 'deps/leveldb/table/block_builder.cc', 420, 436 ]
+118 silly gunzTarPerm extractEntry deps/leveldb/table/two_level_iterator.h
+119 silly gunzTarPerm modified mode [ 'deps/leveldb/table/two_level_iterator.h', 420, 436 ]
+120 silly gunzTarPerm extractEntry deps/leveldb/AUTHORS
+121 silly gunzTarPerm modified mode [ 'deps/leveldb/AUTHORS', 420, 436 ]
+122 silly gunzTarPerm extractEntry deps/leveldb/build_detect_platform
+123 silly gunzTarPerm modified mode [ 'deps/leveldb/build_detect_platform', 493, 509 ]
+124 silly gunzTarPerm extractEntry deps/leveldb/leveldb.gyp
+125 silly gunzTarPerm modified mode [ 'deps/leveldb/leveldb.gyp', 420, 436 ]
+126 silly gunzTarPerm extractEntry deps/leveldb/Makefile
+127 silly gunzTarPerm modified mode [ 'deps/leveldb/Makefile', 420, 436 ]
+128 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/filter_policy.h
+129 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/filter_policy.h', 420, 436 ]
+130 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/table.h
+131 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/table.h', 420, 436 ]
+132 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/options.h
+133 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/options.h', 420, 436 ]
+134 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/env.h
+135 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/env.h', 420, 436 ]
+136 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/c.h
+137 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/c.h', 420, 436 ]
+138 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/db.h
+139 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/db.h', 420, 436 ]
+140 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/comparator.h
+141 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/comparator.h', 420, 436 ]
+142 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/slice.h
+143 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/slice.h', 420, 436 ]
+144 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/iterator.h
+145 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/iterator.h', 420, 436 ]
+146 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/table_builder.h
+147 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/table_builder.h', 420, 436 ]
+148 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/status.h
+149 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/status.h', 420, 436 ]
+150 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/write_batch.h
+151 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/write_batch.h', 420, 436 ]
+152 silly gunzTarPerm extractEntry deps/leveldb/include/leveldb/cache.h
+153 silly gunzTarPerm modified mode [ 'deps/leveldb/include/leveldb/cache.h', 420, 436 ]
+154 silly gunzTarPerm extractEntry deps/leveldb/doc/index.html
+155 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/index.html', 420, 436 ]
+156 silly gunzTarPerm extractEntry deps/leveldb/doc/impl.html
+157 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/impl.html', 420, 436 ]
+158 silly gunzTarPerm extractEntry deps/leveldb/doc/bench/db_bench_tree_db.cc
+159 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/bench/db_bench_tree_db.cc', 420, 436 ]
+160 silly gunzTarPerm extractEntry deps/leveldb/doc/bench/db_bench_sqlite3.cc
+161 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/bench/db_bench_sqlite3.cc', 420, 436 ]
+162 silly gunzTarPerm extractEntry deps/leveldb/doc/log_format.txt
+163 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/log_format.txt', 420, 436 ]
+164 silly gunzTarPerm extractEntry deps/leveldb/doc/benchmark.html
+165 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/benchmark.html', 420, 436 ]
+166 silly gunzTarPerm extractEntry deps/leveldb/doc/doc.css
+167 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/doc.css', 420, 436 ]
+168 silly gunzTarPerm extractEntry deps/leveldb/doc/table_format.txt
+169 silly gunzTarPerm modified mode [ 'deps/leveldb/doc/table_format.txt', 420, 436 ]
+170 silly gunzTarPerm extractEntry deps/leveldb/db/db_iter.h
+171 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_iter.h', 420, 436 ]
+172 silly gunzTarPerm extractEntry deps/leveldb/db/version_edit.h
+173 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_edit.h', 420, 436 ]
+174 silly gunzTarPerm extractEntry deps/leveldb/db/builder.h
+175 silly gunzTarPerm modified mode [ 'deps/leveldb/db/builder.h', 420, 436 ]
+176 silly gunzTarPerm extractEntry deps/leveldb/db/filename_test.cc
+177 silly gunzTarPerm modified mode [ 'deps/leveldb/db/filename_test.cc', 420, 436 ]
+178 silly gunzTarPerm extractEntry deps/leveldb/db/log_format.h
+179 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_format.h', 420, 436 ]
+180 silly gunzTarPerm extractEntry deps/leveldb/db/table_cache.h
+181 silly gunzTarPerm modified mode [ 'deps/leveldb/db/table_cache.h', 420, 436 ]
+182 silly gunzTarPerm extractEntry deps/leveldb/db/db_impl.cc
+183 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_impl.cc', 420, 436 ]
+184 silly gunzTarPerm extractEntry deps/leveldb/db/version_set.cc
+185 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_set.cc', 420, 436 ]
+186 silly gunzTarPerm extractEntry deps/leveldb/db/builder.cc
+187 silly gunzTarPerm modified mode [ 'deps/leveldb/db/builder.cc', 420, 436 ]
+188 silly gunzTarPerm extractEntry deps/leveldb/db/db_impl.h
+189 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_impl.h', 420, 436 ]
+190 silly gunzTarPerm extractEntry deps/leveldb/db/repair.cc
+191 silly gunzTarPerm modified mode [ 'deps/leveldb/db/repair.cc', 420, 436 ]
+192 silly gunzTarPerm extractEntry deps/leveldb/db/table_cache.cc
+193 silly gunzTarPerm modified mode [ 'deps/leveldb/db/table_cache.cc', 420, 436 ]
+194 silly gunzTarPerm extractEntry deps/leveldb/db/log_writer.cc
+195 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_writer.cc', 420, 436 ]
+196 silly gunzTarPerm extractEntry deps/leveldb/db/log_reader.h
+197 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_reader.h', 420, 436 ]
+198 silly gunzTarPerm extractEntry deps/leveldb/db/c_test.c
+199 silly gunzTarPerm modified mode [ 'deps/leveldb/db/c_test.c', 493, 509 ]
+200 silly gunzTarPerm extractEntry deps/leveldb/db/version_edit.cc
+201 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_edit.cc', 420, 436 ]
+202 silly gunzTarPerm extractEntry deps/leveldb/db/dbformat.h
+203 silly gunzTarPerm modified mode [ 'deps/leveldb/db/dbformat.h', 420, 436 ]
+204 silly gunzTarPerm extractEntry deps/leveldb/db/db_test.cc
+205 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_test.cc', 420, 436 ]
+206 silly gunzTarPerm extractEntry deps/leveldb/db/write_batch_test.cc
+207 silly gunzTarPerm modified mode [ 'deps/leveldb/db/write_batch_test.cc', 420, 436 ]
+208 silly gunzTarPerm extractEntry deps/leveldb/db/memtable.h
+209 silly gunzTarPerm modified mode [ 'deps/leveldb/db/memtable.h', 420, 436 ]
+210 silly gunzTarPerm extractEntry deps/leveldb/db/snapshot.h
+211 silly gunzTarPerm modified mode [ 'deps/leveldb/db/snapshot.h', 420, 436 ]
+212 silly gunzTarPerm extractEntry deps/leveldb/db/version_set_test.cc
+213 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_set_test.cc', 420, 436 ]
+214 silly gunzTarPerm extractEntry deps/leveldb/db/corruption_test.cc
+215 silly gunzTarPerm modified mode [ 'deps/leveldb/db/corruption_test.cc', 420, 436 ]
+216 silly gunzTarPerm extractEntry deps/leveldb/db/dbformat.cc
+217 silly gunzTarPerm modified mode [ 'deps/leveldb/db/dbformat.cc', 420, 436 ]
+218 silly gunzTarPerm extractEntry deps/leveldb/db/skiplist_test.cc
+219 silly gunzTarPerm modified mode [ 'deps/leveldb/db/skiplist_test.cc', 420, 436 ]
+220 silly gunzTarPerm extractEntry deps/leveldb/db/db_bench.cc
+221 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_bench.cc', 420, 436 ]
+222 silly gunzTarPerm extractEntry deps/leveldb/db/log_reader.cc
+223 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_reader.cc', 420, 436 ]
+224 silly gunzTarPerm extractEntry deps/leveldb/db/write_batch.cc
+225 silly gunzTarPerm modified mode [ 'deps/leveldb/db/write_batch.cc', 420, 436 ]
+226 silly gunzTarPerm extractEntry deps/leveldb/db/filename.cc
+227 silly gunzTarPerm modified mode [ 'deps/leveldb/db/filename.cc', 420, 436 ]
+228 silly gunzTarPerm extractEntry deps/leveldb/db/skiplist.h
+229 silly gunzTarPerm modified mode [ 'deps/leveldb/db/skiplist.h', 420, 436 ]
+230 silly gunzTarPerm extractEntry deps/leveldb/db/dbformat_test.cc
+231 silly gunzTarPerm modified mode [ 'deps/leveldb/db/dbformat_test.cc', 420, 436 ]
+232 silly gunzTarPerm extractEntry deps/leveldb/db/version_edit_test.cc
+233 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_edit_test.cc', 420, 436 ]
+234 silly gunzTarPerm extractEntry deps/leveldb/db/db_iter.cc
+235 silly gunzTarPerm modified mode [ 'deps/leveldb/db/db_iter.cc', 420, 436 ]
+236 silly gunzTarPerm extractEntry deps/leveldb/db/version_set.h
+237 silly gunzTarPerm modified mode [ 'deps/leveldb/db/version_set.h', 420, 436 ]
+238 silly gunzTarPerm extractEntry deps/leveldb/db/filename.h
+239 silly gunzTarPerm modified mode [ 'deps/leveldb/db/filename.h', 420, 436 ]
+240 silly gunzTarPerm extractEntry deps/leveldb/db/memtable.cc
+241 silly gunzTarPerm modified mode [ 'deps/leveldb/db/memtable.cc', 420, 436 ]
+242 silly gunzTarPerm extractEntry deps/leveldb/db/log_writer.h
+243 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_writer.h', 420, 436 ]
+244 silly gunzTarPerm extractEntry deps/leveldb/db/log_test.cc
+245 silly gunzTarPerm modified mode [ 'deps/leveldb/db/log_test.cc', 420, 436 ]
+246 silly gunzTarPerm extractEntry deps/leveldb/db/c.cc
+247 silly gunzTarPerm modified mode [ 'deps/leveldb/db/c.cc', 420, 436 ]
+248 silly gunzTarPerm extractEntry deps/leveldb/db/write_batch_internal.h
+249 silly gunzTarPerm modified mode [ 'deps/leveldb/db/write_batch_internal.h', 420, 436 ]
+250 silly gunzTarPerm extractEntry deps/leveldb/port/README
+251 silly gunzTarPerm modified mode [ 'deps/leveldb/port/README', 420, 436 ]
+252 silly gunzTarPerm extractEntry deps/leveldb/port/port_example.h
+253 silly gunzTarPerm modified mode [ 'deps/leveldb/port/port_example.h', 420, 436 ]
+254 silly gunzTarPerm extractEntry deps/leveldb/port/port.h
+255 silly gunzTarPerm modified mode [ 'deps/leveldb/port/port.h', 420, 436 ]
+256 silly gunzTarPerm extractEntry deps/leveldb/port/atomic_pointer.h
+257 silly gunzTarPerm modified mode [ 'deps/leveldb/port/atomic_pointer.h', 420, 436 ]
+258 silly gunzTarPerm extractEntry deps/leveldb/port/win/stdint.h
+259 silly gunzTarPerm modified mode [ 'deps/leveldb/port/win/stdint.h', 420, 436 ]
+260 silly gunzTarPerm extractEntry deps/leveldb/port/port_posix.cc
+261 silly gunzTarPerm modified mode [ 'deps/leveldb/port/port_posix.cc', 420, 436 ]
+262 silly gunzTarPerm extractEntry deps/leveldb/port/port_posix.h
+263 silly gunzTarPerm modified mode [ 'deps/leveldb/port/port_posix.h', 420, 436 ]
+264 silly gunzTarPerm extractEntry deps/leveldb/NEWS
+265 silly gunzTarPerm modified mode [ 'deps/leveldb/NEWS', 420, 436 ]
+266 silly gunzTarPerm extractEntry deps/leveldb/TODO
+267 silly gunzTarPerm modified mode [ 'deps/leveldb/TODO', 420, 436 ]
+268 silly gunzTarPerm extractEntry deps/leveldb/util/crc32c.h
+269 silly gunzTarPerm modified mode [ 'deps/leveldb/util/crc32c.h', 420, 436 ]
+270 silly gunzTarPerm extractEntry deps/leveldb/util/env_posix.cc
+271 silly gunzTarPerm modified mode [ 'deps/leveldb/util/env_posix.cc', 420, 436 ]
+272 silly gunzTarPerm extractEntry deps/leveldb/util/testharness.h
+273 silly gunzTarPerm modified mode [ 'deps/leveldb/util/testharness.h', 420, 436 ]
+274 silly gunzTarPerm extractEntry deps/leveldb/util/arena_test.cc
+275 silly gunzTarPerm modified mode [ 'deps/leveldb/util/arena_test.cc', 420, 436 ]
+276 silly gunzTarPerm extractEntry deps/leveldb/util/comparator.cc
+277 silly gunzTarPerm modified mode [ 'deps/leveldb/util/comparator.cc', 420, 436 ]
+278 silly gunzTarPerm extractEntry deps/leveldb/util/mutexlock.h
+279 silly gunzTarPerm modified mode [ 'deps/leveldb/util/mutexlock.h', 420, 436 ]
+280 silly gunzTarPerm extractEntry deps/leveldb/util/env.cc
+281 silly gunzTarPerm modified mode [ 'deps/leveldb/util/env.cc', 420, 436 ]
+282 silly gunzTarPerm extractEntry deps/leveldb/util/arena.cc
+283 silly gunzTarPerm modified mode [ 'deps/leveldb/util/arena.cc', 420, 436 ]
+284 silly gunzTarPerm extractEntry deps/leveldb/util/env_test.cc
+285 silly gunzTarPerm modified mode [ 'deps/leveldb/util/env_test.cc', 420, 436 ]
+286 silly gunzTarPerm extractEntry deps/leveldb/util/histogram.h
+287 silly gunzTarPerm modified mode [ 'deps/leveldb/util/histogram.h', 420, 436 ]
+288 silly gunzTarPerm extractEntry deps/leveldb/util/histogram.cc
+289 silly gunzTarPerm modified mode [ 'deps/leveldb/util/histogram.cc', 420, 436 ]
+290 silly gunzTarPerm extractEntry deps/leveldb/util/bloom.cc
+291 silly gunzTarPerm modified mode [ 'deps/leveldb/util/bloom.cc', 420, 436 ]
+292 silly gunzTarPerm extractEntry deps/leveldb/util/random.h
+293 silly gunzTarPerm modified mode [ 'deps/leveldb/util/random.h', 420, 436 ]
+294 silly gunzTarPerm extractEntry deps/leveldb/util/hash.h
+295 silly gunzTarPerm modified mode [ 'deps/leveldb/util/hash.h', 420, 436 ]
+296 silly gunzTarPerm extractEntry deps/leveldb/util/coding.h
+297 silly gunzTarPerm modified mode [ 'deps/leveldb/util/coding.h', 420, 436 ]
+298 silly gunzTarPerm extractEntry deps/leveldb/util/posix_logger.h
+299 silly gunzTarPerm modified mode [ 'deps/leveldb/util/posix_logger.h', 420, 436 ]
+300 silly gunzTarPerm extractEntry deps/leveldb/util/bloom_test.cc
+301 silly gunzTarPerm modified mode [ 'deps/leveldb/util/bloom_test.cc', 420, 436 ]
+302 silly gunzTarPerm extractEntry deps/leveldb/util/cache_test.cc
+303 silly gunzTarPerm modified mode [ 'deps/leveldb/util/cache_test.cc', 420, 436 ]
+304 silly gunzTarPerm extractEntry deps/leveldb/util/options.cc
+305 silly gunzTarPerm modified mode [ 'deps/leveldb/util/options.cc', 420, 436 ]
+306 silly gunzTarPerm extractEntry deps/leveldb/util/status.cc
+307 silly gunzTarPerm modified mode [ 'deps/leveldb/util/status.cc', 420, 436 ]
+308 silly gunzTarPerm extractEntry deps/leveldb/util/testutil.cc
+309 silly gunzTarPerm modified mode [ 'deps/leveldb/util/testutil.cc', 420, 436 ]
+310 silly gunzTarPerm extractEntry deps/leveldb/util/hash.cc
+311 silly gunzTarPerm modified mode [ 'deps/leveldb/util/hash.cc', 420, 436 ]
+312 silly gunzTarPerm extractEntry deps/leveldb/util/coding_test.cc
+313 silly gunzTarPerm modified mode [ 'deps/leveldb/util/coding_test.cc', 420, 436 ]
+314 silly gunzTarPerm extractEntry deps/leveldb/util/logging.h
+315 silly gunzTarPerm modified mode [ 'deps/leveldb/util/logging.h', 420, 436 ]
+316 silly gunzTarPerm extractEntry deps/leveldb/util/testutil.h
+317 silly gunzTarPerm modified mode [ 'deps/leveldb/util/testutil.h', 420, 436 ]
+318 silly gunzTarPerm extractEntry deps/leveldb/util/crc32c_test.cc
+319 silly gunzTarPerm modified mode [ 'deps/leveldb/util/crc32c_test.cc', 420, 436 ]
+320 silly gunzTarPerm extractEntry deps/leveldb/util/coding.cc
+321 silly gunzTarPerm modified mode [ 'deps/leveldb/util/coding.cc', 420, 436 ]
+322 silly gunzTarPerm extractEntry deps/leveldb/util/arena.h
+323 silly gunzTarPerm modified mode [ 'deps/leveldb/util/arena.h', 420, 436 ]
+324 silly gunzTarPerm extractEntry deps/leveldb/util/crc32c.cc
+325 silly gunzTarPerm modified mode [ 'deps/leveldb/util/crc32c.cc', 420, 436 ]
+326 silly gunzTarPerm extractEntry deps/leveldb/util/logging.cc
+327 silly gunzTarPerm modified mode [ 'deps/leveldb/util/logging.cc', 420, 436 ]
+328 silly gunzTarPerm extractEntry deps/leveldb/util/cache.cc
+329 silly gunzTarPerm modified mode [ 'deps/leveldb/util/cache.cc', 420, 436 ]
+330 silly gunzTarPerm extractEntry deps/leveldb/util/filter_policy.cc
+331 silly gunzTarPerm modified mode [ 'deps/leveldb/util/filter_policy.cc', 420, 436 ]
+332 silly gunzTarPerm extractEntry deps/leveldb/util/testharness.cc
+333 silly gunzTarPerm modified mode [ 'deps/leveldb/util/testharness.cc', 420, 436 ]
+334 silly gunzTarPerm extractEntry deps/leveldb/helpers/memenv/memenv.h
+335 silly gunzTarPerm modified mode [ 'deps/leveldb/helpers/memenv/memenv.h', 420, 436 ]
+336 silly gunzTarPerm extractEntry deps/leveldb/helpers/memenv/memenv.cc
+337 silly gunzTarPerm modified mode [ 'deps/leveldb/helpers/memenv/memenv.cc', 420, 436 ]
+338 silly gunzTarPerm extractEntry deps/leveldb/helpers/memenv/memenv_test.cc
+339 silly gunzTarPerm modified mode [ 'deps/leveldb/helpers/memenv/memenv_test.cc', 420, 436 ]
+340 silly gunzTarPerm extractEntry deps/snappy/README
+341 silly gunzTarPerm modified mode [ 'deps/snappy/README', 420, 436 ]
+342 silly gunzTarPerm extractEntry deps/snappy/snappy_unittest.cc
+343 silly gunzTarPerm modified mode [ 'deps/snappy/snappy_unittest.cc', 420, 436 ]
+344 silly gunzTarPerm extractEntry deps/snappy/snappy-stubs-public.h.in
+345 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-stubs-public.h.in', 420, 436 ]
+346 silly gunzTarPerm extractEntry deps/snappy/snappy.h
+347 silly gunzTarPerm modified mode [ 'deps/snappy/snappy.h', 420, 436 ]
+348 silly gunzTarPerm extractEntry deps/snappy/autogen.sh
+349 silly gunzTarPerm modified mode [ 'deps/snappy/autogen.sh', 493, 509 ]
+350 silly gunzTarPerm extractEntry deps/snappy/snappy-test.cc
+351 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-test.cc', 420, 436 ]
+352 silly gunzTarPerm extractEntry deps/snappy/configure.ac
+353 silly gunzTarPerm modified mode [ 'deps/snappy/configure.ac', 420, 436 ]
+354 silly gunzTarPerm extractEntry deps/snappy/testdata/baddata2.snappy
+355 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/baddata2.snappy', 420, 436 ]
+356 silly gunzTarPerm extractEntry deps/snappy/testdata/urls.10K
+357 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/urls.10K', 420, 436 ]
+358 silly gunzTarPerm extractEntry deps/snappy/testdata/alice29.txt
+359 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/alice29.txt', 420, 436 ]
+360 silly gunzTarPerm extractEntry deps/snappy/testdata/ptt5
+361 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/ptt5', 420, 436 ]
+362 silly gunzTarPerm extractEntry deps/snappy/testdata/lcet10.txt
+363 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/lcet10.txt', 420, 436 ]
+364 silly gunzTarPerm extractEntry deps/snappy/testdata/fields.c
+365 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/fields.c', 420, 436 ]
+366 silly gunzTarPerm extractEntry deps/snappy/testdata/mapreduce-osdi-1.pdf
+367 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/mapreduce-osdi-1.pdf', 420, 436 ]
+368 silly gunzTarPerm extractEntry deps/snappy/testdata/kennedy.xls
+369 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/kennedy.xls', 420, 436 ]
+370 silly gunzTarPerm extractEntry deps/snappy/testdata/baddata1.snappy
+371 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/baddata1.snappy', 420, 436 ]
+372 silly gunzTarPerm extractEntry deps/snappy/testdata/geo.protodata
+373 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/geo.protodata', 420, 436 ]
+374 silly gunzTarPerm extractEntry deps/snappy/testdata/kppkn.gtb
+375 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/kppkn.gtb', 420, 436 ]
+376 silly gunzTarPerm extractEntry deps/snappy/testdata/xargs.1
+377 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/xargs.1', 420, 436 ]
+378 silly gunzTarPerm extractEntry deps/snappy/testdata/baddata3.snappy
+379 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/baddata3.snappy', 420, 436 ]
+380 silly gunzTarPerm extractEntry deps/snappy/testdata/plrabn12.txt
+381 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/plrabn12.txt', 420, 436 ]
+382 silly gunzTarPerm extractEntry deps/snappy/testdata/grammar.lsp
+383 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/grammar.lsp', 420, 436 ]
+384 silly gunzTarPerm extractEntry deps/snappy/testdata/house.jpg
+385 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/house.jpg', 420, 436 ]
+386 silly gunzTarPerm extractEntry deps/snappy/testdata/html_x_4
+387 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/html_x_4', 420, 436 ]
+388 silly gunzTarPerm extractEntry deps/snappy/testdata/html
+389 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/html', 420, 436 ]
+390 silly gunzTarPerm extractEntry deps/snappy/testdata/sum
+391 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/sum', 420, 436 ]
+392 silly gunzTarPerm extractEntry deps/snappy/testdata/asyoulik.txt
+393 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/asyoulik.txt', 420, 436 ]
+394 silly gunzTarPerm extractEntry deps/snappy/testdata/cp.html
+395 silly gunzTarPerm modified mode [ 'deps/snappy/testdata/cp.html', 420, 436 ]
+396 silly gunzTarPerm extractEntry deps/snappy/ChangeLog
+397 silly gunzTarPerm modified mode [ 'deps/snappy/ChangeLog', 420, 436 ]
+398 silly gunzTarPerm extractEntry deps/snappy/snappy-c.h
+399 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-c.h', 420, 436 ]
+400 silly gunzTarPerm extractEntry deps/snappy/framing_format.txt
+401 silly gunzTarPerm modified mode [ 'deps/snappy/framing_format.txt', 420, 436 ]
+402 silly gunzTarPerm extractEntry deps/snappy/snappy-stubs-internal.h
+403 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-stubs-internal.h', 420, 436 ]
+404 silly gunzTarPerm extractEntry deps/snappy/AUTHORS
+405 silly gunzTarPerm modified mode [ 'deps/snappy/AUTHORS', 420, 436 ]
+406 silly gunzTarPerm extractEntry deps/snappy/COPYING
+407 silly gunzTarPerm modified mode [ 'deps/snappy/COPYING', 420, 436 ]
+408 silly gunzTarPerm extractEntry deps/snappy/snappy.gyp
+409 silly gunzTarPerm modified mode [ 'deps/snappy/snappy.gyp', 420, 436 ]
+410 silly gunzTarPerm extractEntry deps/snappy/snappy-internal.h
+411 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-internal.h', 420, 436 ]
+412 silly gunzTarPerm extractEntry deps/snappy/snappy.cc
+413 silly gunzTarPerm modified mode [ 'deps/snappy/snappy.cc', 420, 436 ]
+414 silly gunzTarPerm extractEntry deps/snappy/format_description.txt
+415 silly gunzTarPerm modified mode [ 'deps/snappy/format_description.txt', 420, 436 ]
+416 silly gunzTarPerm extractEntry deps/snappy/snappy-c.cc
+417 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-c.cc', 420, 436 ]
+418 silly gunzTarPerm extractEntry deps/snappy/snappy-test.h
+419 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-test.h', 420, 436 ]
+420 silly gunzTarPerm extractEntry deps/snappy/snappy-sinksource.h
+421 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-sinksource.h', 420, 436 ]
+422 silly gunzTarPerm extractEntry deps/snappy/Makefile.am
+423 silly gunzTarPerm modified mode [ 'deps/snappy/Makefile.am', 420, 436 ]
+424 silly gunzTarPerm extractEntry deps/snappy/m4/gtest.m4
+425 silly gunzTarPerm modified mode [ 'deps/snappy/m4/gtest.m4', 420, 436 ]
+426 silly gunzTarPerm extractEntry deps/snappy/snappy-stubs-internal.cc
+427 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-stubs-internal.cc', 420, 436 ]
+428 silly gunzTarPerm extractEntry deps/snappy/NEWS
+429 silly gunzTarPerm modified mode [ 'deps/snappy/NEWS', 420, 436 ]
+430 silly gunzTarPerm extractEntry deps/snappy/snappy-sinksource.cc
+431 silly gunzTarPerm modified mode [ 'deps/snappy/snappy-sinksource.cc', 420, 436 ]
+432 silly gunzTarPerm extractEntry port/snappy/win32/snappy-stubs-public.h
+433 silly gunzTarPerm modified mode [ 'port/snappy/win32/snappy-stubs-public.h', 420, 436 ]
+434 silly gunzTarPerm extractEntry port/snappy/mac/snappy-stubs-public.h
+435 silly gunzTarPerm modified mode [ 'port/snappy/mac/snappy-stubs-public.h', 420, 436 ]
+436 silly gunzTarPerm extractEntry port/snappy/mac/config.h
+437 silly gunzTarPerm modified mode [ 'port/snappy/mac/config.h', 420, 436 ]
+438 silly gunzTarPerm extractEntry port/snappy/linux/snappy-stubs-public.h
+439 silly gunzTarPerm modified mode [ 'port/snappy/linux/snappy-stubs-public.h', 420, 436 ]
+440 silly gunzTarPerm extractEntry port/snappy/linux/config.h
+441 silly gunzTarPerm modified mode [ 'port/snappy/linux/config.h', 420, 436 ]
+442 silly gunzTarPerm extractEntry demo/million-batch.coffee
+443 silly gunzTarPerm modified mode [ 'demo/million-batch.coffee', 420, 436 ]
+444 silly gunzTarPerm extractEntry demo/write-read.coffee
+445 silly gunzTarPerm modified mode [ 'demo/write-read.coffee', 420, 436 ]
+446 silly gunzTarPerm extractEntry lib/index.js
+447 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+448 silly gunzTarPerm extractEntry lib/leveldb/handle.js
+449 silly gunzTarPerm modified mode [ 'lib/leveldb/handle.js', 420, 436 ]
+450 silly gunzTarPerm extractEntry lib/leveldb/iterator.js
+451 silly gunzTarPerm modified mode [ 'lib/leveldb/iterator.js', 420, 436 ]
+452 silly gunzTarPerm extractEntry lib/leveldb/batch.js
+453 silly gunzTarPerm modified mode [ 'lib/leveldb/batch.js', 420, 436 ]
+454 silly gunzTarPerm extractEntry test/snapshot-test.coffee
+455 silly gunzTarPerm modified mode [ 'test/snapshot-test.coffee', 420, 436 ]
+456 silly gunzTarPerm extractEntry test/batch-test.coffee
+457 silly gunzTarPerm modified mode [ 'test/batch-test.coffee', 420, 436 ]
+458 silly gunzTarPerm extractEntry test/handle-test.coffee
+459 silly gunzTarPerm modified mode [ 'test/handle-test.coffee', 420, 436 ]
+460 silly gunzTarPerm extractEntry test/package-test.coffee
+461 silly gunzTarPerm modified mode [ 'test/package-test.coffee', 420, 436 ]
+462 silly gunzTarPerm extractEntry test/iterator-test.coffee
+463 silly gunzTarPerm modified mode [ 'test/iterator-test.coffee', 420, 436 ]
+464 silly gunzTarPerm extractEntry test/comparator-test.coffee
+465 silly gunzTarPerm modified mode [ 'test/comparator-test.coffee', 420, 436 ]
+466 silly gunzTarPerm extractEntry src/cpp/binding.cc
+467 silly gunzTarPerm modified mode [ 'src/cpp/binding.cc', 420, 436 ]
+468 silly gunzTarPerm extractEntry src/cpp/node_async_shim.h
+469 silly gunzTarPerm modified mode [ 'src/cpp/node_async_shim.h', 420, 436 ]
+470 silly gunzTarPerm extractEntry src/cpp/options.h
+471 silly gunzTarPerm modified mode [ 'src/cpp/options.h', 420, 436 ]
+472 silly gunzTarPerm extractEntry src/cpp/batch.cc
+473 silly gunzTarPerm modified mode [ 'src/cpp/batch.cc', 420, 436 ]
+474 silly gunzTarPerm extractEntry src/cpp/comparator.cc
+475 silly gunzTarPerm modified mode [ 'src/cpp/comparator.cc', 420, 436 ]
+476 silly gunzTarPerm extractEntry src/cpp/iterator.cc
+477 silly gunzTarPerm modified mode [ 'src/cpp/iterator.cc', 420, 436 ]
+478 silly gunzTarPerm extractEntry src/cpp/comparator.h
+479 silly gunzTarPerm modified mode [ 'src/cpp/comparator.h', 420, 436 ]
+480 silly gunzTarPerm extractEntry src/cpp/iterator.h
+481 silly gunzTarPerm modified mode [ 'src/cpp/iterator.h', 420, 436 ]
+482 silly gunzTarPerm extractEntry src/cpp/helpers.h
+483 silly gunzTarPerm modified mode [ 'src/cpp/helpers.h', 420, 436 ]
+484 silly gunzTarPerm extractEntry src/cpp/handle.h
+485 silly gunzTarPerm modified mode [ 'src/cpp/handle.h', 420, 436 ]
+486 silly gunzTarPerm extractEntry src/cpp/handle.cc
+487 silly gunzTarPerm modified mode [ 'src/cpp/handle.cc', 420, 436 ]
+488 silly gunzTarPerm extractEntry src/cpp/batch.h
+489 silly gunzTarPerm modified mode [ 'src/cpp/batch.h', 420, 436 ]
+490 silly gunzTarPerm extractEntry src/coffee/leveldb/batch.coffee
+491 silly gunzTarPerm modified mode [ 'src/coffee/leveldb/batch.coffee', 420, 436 ]
+492 silly gunzTarPerm extractEntry src/coffee/leveldb/handle.coffee
+493 silly gunzTarPerm modified mode [ 'src/coffee/leveldb/handle.coffee', 420, 436 ]
+494 silly gunzTarPerm extractEntry src/coffee/leveldb/iterator.coffee
+495 silly gunzTarPerm modified mode [ 'src/coffee/leveldb/iterator.coffee', 420, 436 ]
+496 silly gunzTarPerm extractEntry src/coffee/index.coffee
+497 silly gunzTarPerm modified mode [ 'src/coffee/index.coffee', 420, 436 ]
+498 info preinstall leveldb@0.7.1
+499 verbose unsafe-perm in lifecycle true
+500 info leveldb@0.7.1 Failed to exec preinstall script
+501 verbose unlock done using /home/miroshko/.npm/_locks/leveldb-bf817c087020bbbb.lock for /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+502 verbose stack Error: leveldb@0.7.1 preinstall: `make build`
+502 verbose stack Exit status 2
+502 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+502 verbose stack     at EventEmitter.emit (events.js:110:17)
+502 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+502 verbose stack     at ChildProcess.emit (events.js:110:17)
+502 verbose stack     at maybeClose (child_process.js:1015:16)
+502 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+503 verbose pkgid leveldb@0.7.1
+504 verbose cwd /home/miroshko/projects/vyshyvanka-server
+505 error Linux 3.13.0-40-lowlatency
+506 error argv "/usr/bin/node" "/usr/bin/npm" "i" "--save" "leveldb"
+507 error node v0.12.2
+508 error npm  v2.7.4
+509 error code ELIFECYCLE
+510 error leveldb@0.7.1 preinstall: `make build`
+510 error Exit status 2
+511 error Failed at the leveldb@0.7.1 preinstall script 'make build'.
+511 error This is most likely a problem with the leveldb package,
+511 error not with npm itself.
+511 error Tell the author that this fails on your system:
+511 error     make build
+511 error You can get their info via:
+511 error     npm owner ls leveldb
+511 error There is likely additional logging output above.
+512 verbose exit [ 1, true ]
+513 verbose unbuild node_modules/leveldb
+514 info preuninstall leveldb@0.7.1
+515 info uninstall leveldb@0.7.1
+516 verbose unbuild rmStuff leveldb@0.7.1 from /home/miroshko/projects/vyshyvanka-server/node_modules
+517 info postuninstall leveldb@0.7.1
+518 silly gentlyRm /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb is being purged from base /home/miroshko/projects/vyshyvanka-server
+519 verbose gentlyRm don't care about contents; nuking /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+520 silly vacuum-fs purging /home/miroshko/projects/vyshyvanka-server/node_modules/leveldb
+521 silly vacuum-fs quitting because other entries in /home/miroshko/projects/vyshyvanka-server/node_modules
