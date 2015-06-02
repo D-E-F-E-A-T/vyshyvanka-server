@@ -9,6 +9,7 @@
   "author": "O. Miroshko",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.12.4",
     "mongoose": "^4.0.4"
   }

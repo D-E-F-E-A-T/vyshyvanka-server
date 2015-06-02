@@ -1,5 +1,6 @@
 var express = require('express');        // call express
 var app = express();
+var cors = require('cors');
 var port = process.env.PORT || 8080;
 
 var mongoose   = require('mongoose');
@@ -26,13 +27,26 @@ router.route('/ornaments')
   });
 
 router.route('/ornaments/:ornamentId')
-  .post(function(req, res) {})
   .get(function(req, res) {
     Ornament.findById(req.params.ornamentId, jsonOut(req, res));
   })
-  .put(function(req, res) {});
+  .patch(function(req, res) {
+    Ornament.findById(req.params.ornamentId, function(err, ornament) {
+      if (!ornament) {
+        ornament = new Ornament({id: req.params.ornamentId});
+      }
+
+      ['operations', 'currentOperation'].forEach(function(key) {
+        if (req.params[key])
+          ornament[key] = req.params[key];
+      });
+
+      ornament.save();
+    })
+  });
 
 app.use('/resources', router);
+app.use(cors());
 
 
 app.listen(port);
