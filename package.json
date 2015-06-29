@@ -9,8 +9,11 @@
   "author": "O. Miroshko",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.13.1",
     "cors": "^2.7.1",
     "express": "^4.12.4",
+    "express-restify-mongoose": "^1.0.2",
+    "method-override": "^2.3.3",
     "mongoose": "^4.0.4"
   }
 }
