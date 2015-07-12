@@ -3,7 +3,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var restify = require('express-restify-mongoose')
+var restify = require('express-restify-mongoose');
+var cors = require('cors');
  
 mongoose.connect('mongodb://localhost/database');
  
@@ -13,6 +14,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride());
+app.use(cors());
  
 var router = express.Router();
 restify.serve(router, Ornament);
