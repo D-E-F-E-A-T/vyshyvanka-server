@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var OrnamentSchema = new Schema({
     operations: Array,
-    currentOperation: Number
+    currentOperationCounter: Number
 });
 
 module.exports = mongoose.model('Ornament', OrnamentSchema);
