@@ -1,6 +1,7 @@
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
   require('shipit-npm')(shipit);
+  require('shipit-pm2')(shipit);
 
   shipit.initConfig({
     default: {
@@ -17,6 +18,9 @@ module.exports = function (shipit) {
     },
     staging: {
       servers: 'miroshko@miroshko.name'
+    },
+    pm2: { 
+      json: 'app.json'
     }
   });
 

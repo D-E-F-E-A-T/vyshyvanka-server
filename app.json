@@ -1,0 +1,5 @@
+{
+  "name" : "vyshyvanka-server-1",
+  "script" : "main.js",
+  "cwd" : "."
+}
