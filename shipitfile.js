@@ -23,9 +23,4 @@ module.exports = function (shipit) {
       json: 'app.json'
     }
   });
-
-  shipit.task('start', function(done) {
-    var current = shipit.config.deployTo + '/current';
-    shipit.remote('cd ' + current + ' && npm start', done);
-  });
 };
