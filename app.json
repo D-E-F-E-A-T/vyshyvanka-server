@@ -1,5 +1,5 @@
 {
   "name" : "vyshyvanka-server-1",
   "script" : "main.js",
-  "cwd" : "."
+  "cwd" : "/srv/hresty.com/current/"
 }
