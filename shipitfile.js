@@ -5,9 +5,6 @@ module.exports = function (shipit) {
 
   shipit.initConfig({
     default: {
-      workspace: '/tmp/hresty.com',
-      deployTo: '/srv/hresty.com',
-      repositoryUrl: 'https://github.com/miroshko/vyshyvanka-server.git',
       ignores: ['.git', 'node_modules'],
       keepReleases: 2,
       deleteOnRollback: false,
@@ -16,8 +13,17 @@ module.exports = function (shipit) {
         remote: true
       }
     },
-    staging: {
-      servers: 'miroshko@miroshko.name'
+    client: {
+      servers: 'miroshko@miroshko.name',
+      workspace: '/tmp/hresty.com/server',
+      deployTo: '/srv/hresty.com/public',
+      repositoryUrl: 'https://github.com/miroshko/vyshyvanka.git',
+    },
+    server: {
+      servers: 'miroshko@miroshko.name',
+      workspace: '/tmp/hresty.com/server',
+      deployTo: '/srv/hresty.com/server',
+      repositoryUrl: 'https://github.com/miroshko/vyshyvanka-server.git',
     },
     pm2: { 
       json: 'app.json'

@@ -2,7 +2,7 @@ server {
   name hresty.com;
 
   location / {
-      alias /srv/hresty.com/client
+      alias /srv/hresty.com/client/current/
   }
 
   location /api {
