@@ -29,4 +29,9 @@ module.exports = function (shipit) {
       json: 'app.json'
     }
   });
+
+  shipit.on('published', function() {
+    var cd = 'cd ' + shipit.config.deployTo + '/current';
+    shipit.remote(cd + ' && bower install && gulp rjs');
+  });
 };
