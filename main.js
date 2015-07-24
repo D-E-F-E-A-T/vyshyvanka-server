@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride());
 app.use(cors());
 app.use(function(req, res, next) {
-  console.log(req.body);
   next();
 });
  
